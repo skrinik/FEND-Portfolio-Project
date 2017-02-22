@@ -5,6 +5,13 @@ Except:
 * Elements first, classes, then id's
 * Media queries last */
 
+/* Import entypo glyphicons */
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+[class*="entypo-"]:before {
+    font-family: 'entypo', sans-serif;
+}
+
 body,
 h1,
 h2,
@@ -12,7 +19,7 @@ h3,
 h4,
 a,
 p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -61,7 +68,7 @@ li span:focus {
 }
 
 .header-top {
-  margin-top:25px;
+  margin-top: 25px;
 }
 
 .main-logo {
@@ -134,10 +141,14 @@ li span:focus {
 }
 
 @media screen and (min-width: 1080px) {
-  .main-header {
-    text-align: left;
+
+  body {
+    max-width: 1080px;
+    display: block;
+    margin: auto;
   }
 
+  .main-header,
   .sub-main-header {
     text-align: left;
   }

@@ -5,6 +5,13 @@ Except:
 * Elements first, classes, then id's
 * Media queries last */
 
+/* Import entypo glyphicons */
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+[class*="entypo-"]:before {
+    font-family: 'entypo', sans-serif;
+}
+
 body,
 h1,
 h2,

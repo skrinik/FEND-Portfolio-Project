@@ -90,10 +90,11 @@ module.exports = function(grunt) {
     //     }]
     //   },
     // },
+    
     cssmin: {
         my_target: {
-            src: 'css/style-tablet.css',
-            dest: 'css/style-tablet.min.css'
+            src: 'css/style.css',
+            dest: 'css/style.min.css'
         }
     }
   });
